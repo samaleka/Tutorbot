@@ -1,2 +1,26 @@
 # Tutorbot
-RAG based Tutoring bot
+## Overview
+
+A chatbot based on Retrieval-Augmented Generation architecture and pre-trained BERT models. This project aims to address the challenge of limited interaction in online learning. 
+
+## Getting Started
+
+### Prerequisites
+
+1. Clone the repository:
+```bash
+git clone <clone link>
+```
+2. Install necessary Python package dependencies before running the notebooks:
+```bash
+pip install -r requirements.txt
+```
+
+### Project Structure
+
+- `/Dataset`: Contains data sets.
+- `/LLM`:     Contains different language models (experimented on train set)
+- `/Information_Retrievers`: Contains different Retrievers models (experimented on train set)
+- DataPreProcess.ipynb which will populate train, test sets & raw knowledge articles under /Dataset.
+- GenerateAnswers.ipynb will generate synthetic ground truth answers for train/test sets.
+- RAGEval.ipynb to evaluate RAG pipelines End-End using test set
