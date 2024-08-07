@@ -17,6 +17,8 @@ pip install -r requirements.txt
 ```
 3. Python 3.10 is a prerequisite to run the code
 
+4. Few LLM Models require CUDA GPU environments to run. 16GB GPU environment is recommended.
+
 ### Project Structure
 
 - `/Dataset`: Contains data sets.
