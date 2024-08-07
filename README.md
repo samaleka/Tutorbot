@@ -15,12 +15,13 @@ git clone <clone link>
 ```bash
 pip install -r requirements.txt
 ```
+3. Python 3.10 is a prerequisite to run the code
 
 ### Project Structure
 
 - `/Dataset`: Contains data sets.
 - `/LLM`:     Contains different language models (experimented on train set)
 - `/Information_Retrievers`: Contains different Retrievers models (experimented on train set)
-- DataPreProcess.ipynb which will populate train, test sets & raw knowledge articles under /Dataset.
+- DataPreProcess.ipynb will populate train, test sets & raw knowledge articles under /Dataset.
 - GenerateAnswers.ipynb will generate synthetic ground truth answers for train/test sets.
 - RAGEval.ipynb to evaluate RAG pipelines End-End using test set
