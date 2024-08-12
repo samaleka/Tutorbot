@@ -27,3 +27,8 @@ pip install -r requirements.txt
 - DataPreProcess.ipynb will populate train, test sets & raw knowledge articles under /Dataset.
 - GenerateAnswers.ipynb will generate synthetic ground truth answers for train/test sets.
 - RAGEval.ipynb to evaluate RAG pipelines End-End using test set
+- `/demo_interface`: Contains streamlit based chatbot (which can run on local host) to answer student questions. Additionally, the chatbot is hosted on `http://34.69.184.232:8000/`
+
+### Notes
+
+- LLM prompts are created with the aid of ChatGPT
