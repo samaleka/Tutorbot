@@ -1,7 +1,7 @@
 # Tutorbot
 ## Overview
 
-A chatbot based on Retrieval-Augmented Generation architecture and pre-trained BERT models. This project aims to address the challenge of limited interaction in online learning. 
+A chatbot based on Retrieval-Augmented Generation architecture and pre-trained LLM models. Different combinations of Language models (BERT variants, Phi variants, etc.) and retriever embedding models are evaluated to get the optimal RAG pipeline. This project aims to address the challenge of limited interaction in online learning. 
 
 ## Getting Started
 
