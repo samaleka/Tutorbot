@@ -32,3 +32,4 @@ pip install -r requirements.txt
 ### Notes
 
 - LLM prompts are created with the aid of ChatGPT
+- Raw knowledge articles used in this project to extract the dataset is from https://en.wikipedia.org/wiki/Data_science which is open source.
