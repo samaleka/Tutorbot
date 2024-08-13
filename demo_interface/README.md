@@ -1,4 +1,4 @@
-# Streamlit Demo for RAG
+# Tutorbot RAG demo based on Streamlit
 
 ## Requirements
 
