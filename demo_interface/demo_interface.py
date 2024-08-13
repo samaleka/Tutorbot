@@ -5,7 +5,7 @@ from transformers import pipeline
 from ragatouille import RAGPretrainedModel
 
 if torch.cuda.is_available():
-    torch.set_default_device("cuda")
+    torch.set_default_device("cpu")
     print("CUDA is available!!")
 else:
     raise RuntimeError("CUDA is not available!! LLM cannot run, rerun with GPU")
@@ -33,7 +33,9 @@ class DemoInterface:
 
     def load_models(self):
         self.retriever = RAGPretrainedModel.from_pretrained(self.retriever_model_name)
-        self.retriever.index(index_name="knowledgestore_index", collection=self.raw_text_list)
+        print(type(self.raw_text_list))
+        self.retriever = self.retriever.from_index(index_path='.ragatouille/colbert/indexes/knowledgestore_index/')
+        #self.retriever.index(index_name="n_knowledgestore_index", collection=self.raw_text_list, use_faiss=True)
         self.generator = pipeline("question-answering", model=self.model_name)
 
     def ask(self, query):
@@ -42,7 +44,7 @@ class DemoInterface:
             return "No relevant information found."
         
         context = retrieved_docs[0]['content']
-        return self.generate_response(context, query)
+        return self.generate_response(context, query), context
 
     def retrieve(self, query, k=1):
         return self.retriever.search(query, k=k)
