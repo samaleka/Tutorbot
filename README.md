@@ -18,6 +18,8 @@ pip install -r requirements.txt
 3. Python 3.10 is a prerequisite to run the code
 
 4. Few LLM Models require CUDA GPU environments to run. 16GB GPU environment is recommended.
+   
+5. Please provide project root paths when asked in the Jupyter notebooks 
 
 ### Project Structure
 
@@ -33,3 +35,8 @@ pip install -r requirements.txt
 
 - LLM prompts are created with the aid of ChatGPT
 - Raw knowledge articles used in this project to extract the dataset is from https://en.wikipedia.org/wiki/Data_science which is open source.
+
+### Contributors
+Tung Nguyen: ngtung@umich.edu
+Mnatsakan Sharafyan: sharaf@umich.edu
+Sangram Sanjiv Malekar: sangram@umich.edu
