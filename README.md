@@ -37,7 +37,7 @@ pip install -r requirements.txt
 - Optionally Rerun `GenerateAnswers.ipynb` (since already generated) to generate synthetic ground truth answers.
 - Run notebooks under `/LLM` to experiment prompt engineering for different generator models.
 - Run notebooks under `/Information_Retrievers` to experiment and benchmark retrievers to get best retriever model.
-- Finally run RAGEval.ipynb to benchmark RAG pipelines using generator models (with best retriever) using test dataset.
+- Finally run RAGEval.ipynb to benchmark RAG pipelines (with generator models and best retriever) using test dataset.
 
 ### Notes
 
