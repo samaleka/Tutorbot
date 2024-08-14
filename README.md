@@ -40,8 +40,9 @@ pip install -r requirements.txt
 - Finally run RAGEval.ipynb to benchmark RAG pipelines (with generator models and best retriever) using test dataset.
 
 ### Notes
-
 - LLM prompts are created with the aid of ChatGPT
+
+### Data Access
 - Raw knowledge articles used in this project to extract the dataset are from https://en.wikipedia.org/wiki/Data_science which is open source.
 
 ### Contributors
